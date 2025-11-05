@@ -1,0 +1,195 @@
+/* DashboardPage.css */
+
+/* Animation for hover lift effect */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom scrollbar for sidebar */
+.sidebar-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.sidebar-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.sidebar-container::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Animations for content loading */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.design-card {
+  animation: fadeInUp 0.5s ease forwards;
+  animation-delay: calc(var(--animation-order) * 0.1s);
+  opacity: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .design-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .main-content {
+    flex-direction: column;
+  }
+  
+  .sidebar-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding: 1rem;
+  }
+  
+  .category-list {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .category-item {
+    white-space: nowrap;
+    margin-right: 0.5rem;
+  }
+  
+  .action-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .action-button {
+    flex: 1 1 calc(50% - 0.5rem);
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  
+  .logo-container {
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .search-container {
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+    order: 3;
+  }
+  
+  .nav-links {
+    flex: 1 1 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .ai-design-promo {
+    flex-direction: column;
+  }
+  
+  .promo-image {
+    max-width: 100%;
+    order: -1;
+  }
+  
+  .content-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .filter-container {
+    margin-top: 1rem;
+  }
+}
+
+/* Pulse animation for AI button */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 153, 0, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 153, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 153, 0, 0);
+  }
+}
+
+.promo-button {
+  animation: pulse 2s infinite;
+}
+
+/* Gradient overlay for design cards */
+.design-image-container {
+  position: relative;
+}
+
+.design-image-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  pointer-events: none;
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}

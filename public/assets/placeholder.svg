@@ -1,0 +1,5 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f0f4f8"/>
+  <text x="400" y="300" font-family="Arial" font-size="24" text-anchor="middle" fill="#666">Interior Insight Image Placeholder</text>
+  <rect x="200" y="330" width="400" height="2" fill="#ccc"/>
+</svg>
