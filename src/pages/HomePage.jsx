@@ -200,7 +200,7 @@ const HomePage = () => {
       
       <HeroSection>
         <HeroContent>
-          <h1 className="hero-title">Transform Your Dream Space with AI</h1>
+          <h1 className="hero-title">Transform Your Space with AI</h1>
           <p className="hero-subtitle">Discover the perfect interior design for your Dream home with our AI-powered platform</p>
           <div className="hero-buttons">
             <Link to="/login">

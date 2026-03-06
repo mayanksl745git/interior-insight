@@ -117,10 +117,14 @@ const TemplatesPage = () => {
   const templates = [
     { name: 'Minimalist Haven', category: 'Living Room', image: '/Images/living2.jpg' },
     { name: 'Urban Chic', category: 'Living Room', image: '/Images/living3.jpg' },
+    { name: 'Scandinavin Calm', category: 'Living Room', image: '/Images/living4.jpg' },
     { name: 'Gourmet Kitchen', category: 'Kitchen', image: '/Images/kt2.jpg' },
     { name: 'Modern Farmhouse', category: 'Kitchen', image: '/Images/kt3.jpg' },
+    { name: 'Luxury Living Lounge', category: 'Lounge', image: '/Images/living5.jpg' },
     { name: 'Serene Slumber', category: 'Bedroom', image: '/Images/bd2.jpg' },
     { name: 'Peaceful Retreat', category: 'Bedroom', image: '/Images/bd3.jpg' },
+    { name: 'Vintage Revival', category: 'Bedroom', image: '/Images/bd5.jpg' },
+    { name: 'Home Office Zen', category: 'Bedroom', image: '/Images/bd4.jpg' },
   ];
 
   return (

@@ -37,7 +37,7 @@ const ContactPage = () => {
       <HeroSection>
         <HeroContent>
           <h1>Contact Us</h1>
-          <p>Get in touch for personalized interior design solutions</p>
+          <p>Get in Touch for personalized Interior Design Solutions</p>
         </HeroContent>
       </HeroSection>
 
@@ -58,7 +58,7 @@ const ContactPage = () => {
                 <Icon>📍</Icon>
                 <div>
                   <h3>Visit Us</h3>
-                  <p>123 Design Street, Indiranagar<br />Bangalore, Karnataka 560038</p>
+                  <p>123 Design Street, Outer Ring Road<br />Muzaffarnagar, Uttar Pradesh, 251002</p>
                 </div>
               </DetailItem>
 
@@ -66,7 +66,7 @@ const ContactPage = () => {
                 <Icon>📞</Icon>
                 <div>
                   <h3>Call Us</h3>
-                  <p>+91 98765 43210<br />Mon-Sat, 9:00 AM - 6:00 PM IST</p>
+                  <p>+91 98765 *****<br />Mon-Sat, 9:00 AM - 6:00 PM IST</p>
                 </div>
               </DetailItem>
 

@@ -7,7 +7,8 @@ const AiDesignExplanationPage = () => {
     <PageContainer>
       <Header>
         <Logo to="/">Interior Insight</Logo>
-        <BackButton to="/ai-design">Back to AI Design</BackButton>
+        <BackButton to="/">Back to DashBoard</BackButton>
+        
       </Header>
       
       <ContentContainer>
@@ -19,6 +20,11 @@ const AiDesignExplanationPage = () => {
             Our AI-powered design system uses advanced machine learning algorithms to transform your space. 
             By analyzing thousands of professional interior designs, our AI can generate personalized 
             recommendations that match your style preferences and room specifications.
+          </Paragraph>
+          <Paragraph>
+            Transform your room into a masterpiece — powered by AI.
+            Upload your space, describe your dream interior, and watch Interior Insight instantly redesign it with 
+            professional precision. Visualize, customize, and explore your dream home before making a single change.
           </Paragraph>
         </Section>
         
@@ -54,10 +60,29 @@ const AiDesignExplanationPage = () => {
             
             <ProcessStep>
               <StepNumber>4</StepNumber>
+              <StepTitle>Explore your own 3D Build View</StepTitle>
+              <StepDescription>
+                Experience your redesigned room in real-time 3D. Rotate, zoom, and navigate your 
+                redesigned space using our integrated 3D viewer — built to give you a realistic 
+                sense of scale, color, and depth.
+              </StepDescription>
+            </ProcessStep>
+
+            <ProcessStep>
+              <StepNumber>5</StepNumber>
               <StepTitle>Customize & Refine</StepTitle>
               <StepDescription>
                 Review the generated designs and make adjustments. You can modify colors, furniture, 
-                and accessories to perfect your space.
+                and accessories to perfect your space. Make changes according to your mood and save you layout for further use .
+              </StepDescription>
+            </ProcessStep>
+
+            <ProcessStep>
+              <StepNumber>6</StepNumber>
+              <StepTitle>Save & Book Consultancy</StepTitle>
+              <StepDescription>
+                Satisfied with your design? Download the final layout or share it directly for professional use, 
+                renovation planning, or personal inspiration and book consultancy.
               </StepDescription>
             </ProcessStep>
           </ProcessContainer>
@@ -84,7 +109,13 @@ const AiDesignExplanationPage = () => {
             <Feature>
               <FeatureTitle>3D Modeling</FeatureTitle>
               <FeatureDescription>
-                Creates realistic visualizations of your redesigned space
+                Creates realistic visualizations of your redesigned space in 3D view,
+              </FeatureDescription>
+            </Feature>
+            <Feature>
+              <FeatureTitle>AI Genration</FeatureTitle>
+              <FeatureDescription>
+                Creates realistic visualizations of your redesigned space using our AI Model.
               </FeatureDescription>
             </Feature>
           </FeatureList>
