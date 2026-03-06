@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/categories';
+const API_URL = 'https://interior-insight.onrender.com/api/categories';
 
 // Get all categories
 export const getCategories = async () => {
